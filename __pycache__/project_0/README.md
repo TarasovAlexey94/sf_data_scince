@@ -11,7 +11,7 @@
 ### Описание проекта
 Угадать загаданное компютером число за минимальное количество попыток.
 
-:arroe_up:[у оглавлению](https://github.com/TarasovAlexey94/sf_data_scince/blob/main/__pycache__/project_0/README.md/#Оглавление)
+:arrow_up:[у оглавлению](https://github.com/TarasovAlexey94/sf_data_scince/blob/main/__pycache__/project_0/README.md/#Оглавление)
 
 ### Какой кейс решаем?
 Нужно написать программу, которая угадываетт число за минимальное количество  попыток
