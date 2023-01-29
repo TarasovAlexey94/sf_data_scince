@@ -1,6 +1,7 @@
 import numpy as np
 import random
 random_number = random.randint(1, 101) #Загадывае слуайное число в выбраннном  диапазоне
+
 def game_v3(number:int=1)->int:
     """Рандомно угадываем число
 
@@ -18,12 +19,10 @@ def game_v3(number:int=1)->int:
         mid = (min+max)//2 #Приеняем метод деленния на 2
         if mid == random_number:
             break  #выход из цикла, если угадали
-        
         elif mid > random_number:
             max = mid
         else:
             min = mid
-            
     return (count) #Возвращем число попыток
 
 def score_game(game_v3)->int:
