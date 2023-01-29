@@ -14,16 +14,16 @@ def game_v3(number: int = 1) -> int:
     count = 0
     min = 1
     max = 100
-    while True: #Запускаем цикл отбора
+    while True: # Запускаем цикл отбора
         count += 1
-        mid = (min + max)//2 #Приеняем метод деленния на 2
+        mid = (min + max)//2 # Приеняем метод деленния на 2
         if mid == random_number:
-            break  #выход из цикла, если угадали
+            break  # выход из цикла, если угадали
         elif mid > random_number:
             max = mid
         else:
             min = mid
-    return (count) #Возвращем число попыток
+    return (count) # Возвращем число попыток
 
 def score_game(game_v3) -> int:
     """За какое количество попыток в среднем из 1000 подходов 
@@ -36,14 +36,14 @@ def score_game(game_v3) -> int:
     Returns:
         int: среднее количество попыток
     """
-    count_1s = []   #список для сохранения количества попыток
-    np.random.seed(1)   #фиксируем сид для воспроизводимости
-    random_array=np.random.randint(1, 101, size = (1000))  #загадали список чисел
+    count_1s = []   # Cписок для сохранения количества попыток
+    np.random.seed(1)   # Фиксируем сид для воспроизводимости
+    random_array=np.random.randint(1, 101, size = (1000))  # Загадали список чисел
     for number in random_array:
         count_1s.append(game_v3(number))
-    score=int(np.mean(count_1s))  #находим среднее количество попыток
+    score=int(np.mean(count_1s))  # Находим среднее количество попыток
     
     print(f'Ваш алгоритм угадывает число в среднем за : {score} попыток')
     return(score)
-#Run
+# Run
 score_game(game_v3)
