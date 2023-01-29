@@ -1,6 +1,6 @@
 import numpy as np
 import random
-random_number = random.randint(1, 101) #Загадывае слуайное число в выбраннном  диапазоне
+random_number = random.randint(1, 101) # Загадывае слуайное число в выбраннном  диапазоне
 
 def game_v3(number: int = 1) -> int:
     """Рандомно угадываем число
