@@ -43,7 +43,7 @@ def score_game(game_v3) -> int:
         count_1s.append(game_v3(number))
     score = int(np.mean(count_1s))  # Находим среднее количество попыток
     
-    print(f'Ваш алгоритм угадывает число в среднем за : {score} попыток')
+    print(f'Ваш алгоритм угадывает число в среднем за: {score} попыток')
     return(score)
 # Run
 score_game(game_v3)
