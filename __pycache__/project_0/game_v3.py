@@ -38,10 +38,10 @@ def score_game(game_v3) -> int:
     """
     count_1s = []   # Cписок для сохранения количества попыток
     np.random.seed(1)   # Фиксируем сид для воспроизводимости
-    random_array=np.random.randint(1, 101, size = (1000))  # Загадали список чисел
+    random_array = np.random.randint(1, 101, size = (1000))  # Загадали список чисел
     for number in random_array:
         count_1s.append(game_v3(number))
-    score=int(np.mean(count_1s))  # Находим среднее количество попыток
+    score = int(np.mean(count_1s))  # Находим среднее количество попыток
     
     print(f'Ваш алгоритм угадывает число в среднем за : {score} попыток')
     return(score)
